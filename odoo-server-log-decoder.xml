@@ -3,7 +3,7 @@
 <prematch type="pcre2">\w+</prematch>
       <!-- 'regex' field defines the main regular expression pattern to extract specific parts of the log message -->
 
-<regex type="pcre2">(\w+)\s(\w+)\s(.+):\s(.+)</regex>
+<regex type="pcre2">(\w+)\s(\w+|\?)\s(.+):\s(.+)</regex>
       <!-- 'order' field specifies the order of the extracted groups from the regex pattern to be assigned to the respective fields -->
 
  <order>message,database,module,data</order>
