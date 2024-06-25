@@ -1,0 +1,10 @@
+<decoder name="odoo-log-decoder">
+  <!-- 'prematch' field uses a PCRE2 regular expression to define a pre-matching pattern to optimize the decoding process -->
+<prematch type="pcre2">\w+</prematch>
+      <!-- 'regex' field defines the main regular expression pattern to extract specific parts of the log message -->
+
+<regex type="pcre2">(\w+)\s(\w+)\s(.+):\s(.+)</regex>
+      <!-- 'order' field specifies the order of the extracted groups from the regex pattern to be assigned to the respective fields -->
+
+ <order>message,database,module,data</order>
+</decoder> 
