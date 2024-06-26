@@ -1,10 +1,12 @@
+<!-- these are just examples of the rules syntax, you are not gonna use these in real life you will have to configure them according to your ussecases -->
+
 <group name="odoo_logs">
-    <rule id="100000" level="6">
+    <rule id="100000" level="0">
         <decoded_as>odoo-log-decoder</decoded_as>
         <regex>INFO</regex>
         <description>Odoo log INFO</description>  
     </rule>
-        <rule id="100005" level="6">
+    <rule id="100005" level="6">
         <decoded_as>odoo-log-decoder</decoded_as>
         <regex>WARNING</regex>
         <description>Odoo log WARNING</description>  
